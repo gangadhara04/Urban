@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+//! UI Creation using Composite Composition from(Components)
 
-function App() {
+import React from 'react'
+import Navbar from './ComponentsComposition/Header/Navbar';
+import Main from './ComponentsComposition/Main/Main';
+import Footer from './ComponentsComposition/Footer/Footer';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div id="navBlock"><Navbar/><Main/><Footer/></div>
+  )
 }
 
-export default App;
+export default App
